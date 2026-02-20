@@ -1,0 +1,56 @@
+# --- Dependency Directories ---
+node_modules/
+jspm_packages/
+venv/
+env/
+bin/
+obj/
+.gradle/
+build/
+dist/
+
+# --- Environment & Secret Files ---
+# Never push these as it leads to security risks or integration failures [cite: 111, 259]
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# --- OS-Specific Files ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# --- IDE & Editor Settings ---
+# Prevents personal editor configurations from affecting other team members [cite: 305]
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs and Databases ---
+# DevOps should manage these via the monitoring tools (Prometheus/Grafana) [cite: 203, 437]
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.sqlite
+*.db
+
+# --- Mobile/Cross-Platform Specific ---
+# For the Mobile sub-team (5 members) [cite: 83, 243]
+.expo/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+android/app/debug/
+android/app/release/
+ios/DerivedData/
